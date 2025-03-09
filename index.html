@@ -1,0 +1,2466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidvante.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+     <script type="text/javascript">
+       (function(){
+      emailjs.init({
+        publicKey: "ZFFSgpD2q7brkmnF-",
+      });
+      })();
+   </script>
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f8fc;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Top Black Strip */
+.top-bar {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 17px;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    cursor: pointer;
+    color: aqua;
+}
+
+.social-icons i:hover {
+    color: #A259FF;
+}
+
+.contact-info, .contact-number {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i, .contact-number i {
+    margin-right: 8px;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    border-bottom: 6px solid #A259FF;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2px;
+}
+
+/* Logo */
+.logo img {
+    height: 80px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: #A259FF;
+}
+
+/* CALL NOW Button */
+.call-now .btn {
+    background: #A259FF;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.call-now .btn:hover {
+    color: #8a5de4;
+}
+
+/* Hero Section */
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h5 {
+    display: inline-block;
+    background-color: #a475f7;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #8a5de4;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-yellow {
+    background-color: #FFD700;
+    color: black;
+}
+
+/* Partners */
+.partners {
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex;
+    gap: 15px;
+}
+
+.logos img {
+    height: 40px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+/* Statistics Section */
+.container-stats {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Aidvante-Banner-2-scaled.webp") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #635BFF;
+    margin: 5px auto;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff6b4a;
+}
+
+.label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Services Section */
+.service-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #635BFF;
+    margin: 8px auto;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #ff6b4a;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: #635BFF;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.read-more-btn:hover {
+    background: #4a45cc;
+}
+.stats-background.img{
+   height: 40px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .top-bar, .container {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .call-now {
+        margin-top: 10px;
+    }
+}
+.text-content h5{
+    background-color: #a475f7;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.stars {
+    font-size: 30px;
+    color: #f4b400;
+}
+.footer {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: azure;
+}
+
+.footer-column {
+    width: 20%;
+    font-size: 30px;
+}
+
+.logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    width: 50px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    color: #4b0082;
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+
+.subscribe p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.subscribe input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.subscribe button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #4b0082;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-column {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe input,
+    .subscribe button {
+        width: 90%;
+    }
+}
+.banner {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: left;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 25, 45, 0.9); /* Dark overlay */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.home-btn {
+    background-color: #5cd65c;
+    color: #fff;
+}
+
+.start-btn {
+    background-color: #ff4d79;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-content {
+    background: #18204b;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    color: #6cb2eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-content {
+    background: #18204b;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    color: #6cb2eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.hero {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    background: #f0f2fc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hero-text {
+    padding: 40px;
+    background: #f0f2fc;
+    text-align: left;
+    flex: 1;
+}
+
+.sub-heading {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin: 15px 0;
+}
+
+.talk-button {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.talk-button:hover {
+    background: #c0392b;
+}
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left Content */
+.services-content {
+    max-width: 600px;
+}
+
+.services-subtitle {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.services-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+}
+
+.services-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Progress Bars */
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-item {
+    margin-bottom: 15px;
+}
+
+.progress-label {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: navy;
+    border-radius: 5px;
+    transition: width 2s ease-in-out;
+}
+
+/* Button */
+.explore-button {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.explore-button:hover {
+    background: #c0392b;
+}
+
+/* Right Image */
+.services-image img {
+    max-width: 500px;
+}
+.consultation-section {
+    display: flex;
+   background-color: #f0f2fc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left Image */
+.consultation-image img {
+    max-width: 400px;
+}
+
+/* Right Content */
+.consultation-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.consultation-subtitle {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.consultation-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+}
+
+.consultation-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.consultation-button {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.consultation-button:hover {
+    background: #c0392b;
+}
+.blog-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Blog Section */
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 65%;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-content {
+    margin-top: 15px;
+}
+
+.blog-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: gray;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Blog Button */
+.blog-button {
+    background: #ffcc00;
+    color: #111;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.blog-button:hover {
+    background: #e6b800;
+}
+
+/* Sidebar */
+.blog-sidebar {
+    width: 30%;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+    border-left: 4px solid #d4a6ff;
+    padding-left: 10px;
+}
+
+.about-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 14px;
+    color: #111;
+    padding: 5px 0;
+}
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Blog Content */
+.blog-content {
+    width: 65%;
+    background: #dde3eb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: gray;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Read More Button */
+.read-more {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+/* Sidebar */
+.blog-sidebar {
+    width: 30%;
+}
+
+/* Recent Posts */
+.recent-posts {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-posts li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #111;
+    padding: 5px 0;
+}
+
+.recent-posts img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Company Info */
+.company-info {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.company-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-button {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background: #0056b3;
+}
+.about-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* Left Content */
+.about-content {
+    width: 55%;
+}
+
+.about-heading {
+    color: #7e57c2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Features Section */
+.about-features {
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icons */
+.vision {
+    background: #b39ddb url('vision-icon.png') no-repeat center;
+}
+
+.approach {
+    background: #1e88e5 url('approach-icon.png') no-repeat center;
+}
+
+.innovation {
+    background: #8e24aa url('innovation-icon.png') no-repeat center;
+}
+
+.commitment {
+    background: #9c27b0 url('commitment-icon.png') no-repeat center;
+}
+
+.feature-text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.feature-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Right Image */
+.about-image {
+    width: 45%;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blue-decor {
+    width: 30px;
+    height: 30px;
+    background: #0066ff;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.top-right {
+    top: -10px;
+    right: -10px;
+}
+
+.bottom-left {
+    bottom: -10px;
+    left: -10px;
+}
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* Left Image */
+.contact-image {
+    width: 45%;
+}
+
+.contact-image img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* Right Content */
+.contact-content {
+    width: 55%;
+}
+
+.contact-subtitle {
+    color: #7e57c2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Button */
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #7e57c2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #6a46b2;
+}
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading Styles */
+.team-subtitle {
+    color: #7e57c2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Team Members Grid */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Team Card */
+.team-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+.team-role {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.team-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+.timeline-section {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+
+.timeline-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading Styles */
+.timeline-subtitle {
+    color: #7e57c2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeline-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Timeline Structure */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Timeline Items */
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Left and Right Alignment */
+.timeline-item.left .timeline-content {
+    text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+    text-align: left;
+}
+
+/* Timeline Content Box */
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+/* Date and Location */
+.timeline-date {
+    width: 45%;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    
+}
+
+.timeline-item.right .timeline-date {
+    text-align: right;
+}
+
+/* Highlighted Text */
+.highlight-text {
+    color: #7e57c2;
+    font-weight: bold;
+    
+}
+.layyer i{
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #081b29;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.contact-section {
+    position: relative;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background: white;
+    overflow: hidden;
+}
+
+.contact-heading {
+    font-size: 60px;
+    font-weight: bold;
+    color: #955cff;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    color: #955cff;
+}
+
+.contact-info p {
+    color: #555;
+    font-size: 16px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #955cff;
+    margin-right: 10px;
+}
+
+.contact-form {
+    width: 50%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #6b5bff;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #5749d1;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.cta-button {
+    background: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+</style>
+</head>
+<body>
+<section class="home" id="home">
+    <!-- Top Black Strip -->
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+            <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i> 7-21 George Street, Croydon, England, CR0 1LA
+        </div>
+        <div class="contact-number">
+            <i class="fas fa-phone-alt"></i> +44(020) 78701232
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-map-marker-alt"></i> 7-21 George Street, Croydon, England, CR0 1LA
+            </div>
+            <div class="contact-number">
+                <i class="fas fa-phone-alt"></i> +44(020) 78701232
+            </div>
+        </div>
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="https://i.ibb.co/1f3KPy5Y/logo.png" alt="Aidvante Logo"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#" class="cta-button">Get Started</a>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            </nav>
+        </header>
+    </nav>
+
+    <section class="container">
+        <div class="text-content">
+            <h5>Rated 4.5 of 5</h5>
+            <div class="stars">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+            </div>
+            <h1>Trusted <span class="highlight">Digital Solutions</span> For Charities in London</h1>
+            <p>At AidVante, we've helped 100+ charities and donors navigate the complexities of helping charities save £5.2 million in UK tax relief and empowering charities with digital solutions. From Gift Aid claims and charity formation in Gaza to call center setup, virtual call centers, IT support, SEO, PPC, and payment gateways, we help you maximize impact.</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-green">CALL FREE NOW</a>
+                <a href="#" class="btn btn-yellow">GIFT AID CLAIMS</a>
+            </div>
+            <div class="partners">
+                <div class="logos">
+                    <!-- Add image tags for logos here -->
+                    <img src="./stripe.jpg">
+                    <img src="./Ch_client-180x58-1.jpg" >
+                    <img src="./tameer_client-181x65-3.jpg" alt="Partner 3">
+                    <img src="./Qurbani-client-165x38-2.jpg" alt="Partner 4">
+                </div>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="./Aidvante-image-768x768.jpg" alt="Professional Man with Laptop">
+        </div>
+    </section>
+<section class="stats-background">
+    <div class="container-stats">
+        <div class="bg-image"></div>
+        
+        <h2>Why Choose Our Charity Tax Relief Consultancy?</h2>
+        <p>We provide expert charity tax relief consultancy to donors and nonprofit organizations. With 5+ years of experience, we simplify tax processes, ensure compliance, and maximize relief benefits, delivering trusted, high-quality solutions tailored to your needs.</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="number" data-target="5200">0</div>
+                <div class="label">Happy Customers</div>
+            </div>
+            <div class="stat-box">
+                <div class="number" data-target="100">0</div>
+                <div class="label">Work Quality</div>
+            </div>
+            <div class="stat-box">
+                <div class="number" data-target="65">0</div>
+                <div class="label">Award Winner</div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+    <div class="service-wrapper">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-description">Aidvante is here to solve your challenges with care and expertise. We make Gift Aid claims straightforward, guide you through hassle-free charity registration, help you stand out online with PPC campaigns, and ensure secure, seamless payments. Let us simplify your operations and help your organization grow.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📞</div>
+                <h3 class="service-title">Call Center Solutions</h3>
+                <p class="service-text">Effortless customer support with our UK-focused Call Center Solutions, keeping your audience connected and your operations seamless.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎁</div>
+                <h3 class="service-title">Gift Aid Solutions</h3>
+                <p class="service-text">Maximise UK charity donations with our Gift Aid Solutions, making claiming easy and boosting your impact.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3 class="service-title">Digital Marketing</h3>
+                <p class="service-text">Grow your UK brand with tailored Digital Marketing strategies designed to deliver results and drive engagement.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3 class="service-title">Gift Aid</h3>
+                <p class="service-text">Maximize your UK charity's funding with streamlined Gift Aid claims, ensuring compliance and hassle-free support.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📜</div>
+                <h3 class="service-title">Charity Registration</h3>
+                <p class="service-text">Kickstart your UK charity with expert registration services, making setup smooth and fully compliant.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧑‍💼</div>
+                <h3 class="service-title">Virtual Reception</h3>
+                <p class="service-text">Professional UK Virtual Reception services to handle calls, bookings, and customer interactions with care.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3 class="service-title">SEO</h3>
+                <p class="service-text">Boost your online visibility with expert SEO targeted at driving UK traffic and growing your audience.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3 class="service-title">PPC</h3>
+                <p class="service-text">Capture attention with data-driven PPC campaigns for targeted results and measurable growth in the UK.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💳</div>
+                <h3 class="service-title">Payment Gateway Solutions</h3>
+                <p class="service-text">Enable secure transactions with Payment Gateway Solutions, building trust and boosting your UK business.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </div><br><br>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column logo-section">
+                <div class="logo-placeholder"><img src="Aidvante-Co-New-497-x-502-px.jpg" width="90px"></div><br>
+                <p class="tagline">Every Penny Counts</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#contact">Call Centre</a></li>
+                    <li><a href="#3">Engagement</a></li>
+                    <li><a href="#3">Builder</a></li>
+                    <li><a href="#2">Publisher</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Main Links</h4>
+                <ul>
+                    <li><a href="#1">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>Need Tax Updates?</h4>
+                <p>Subscribe to our site for quick gift aid relief updates.</p>
+                <form>
+                    <input type="email" placeholder="sample@mail.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer> 
+    <script src="./stats.js"></script>
+</section>
+<section class="services" id="services">
+    <section class="banner">
+        <div class="content">
+            <h1>Digital Marketing Services</h1>
+            <p>
+                Our mission is to help you attract more customers online. You need to reach your target audience across multiple platforms 
+                and devices to grow your business. We provide expert SEO services, PPC marketing, content strategy, and digital growth 
+                solutions to boost your visibility, traffic, and ROI. Using data-driven strategies and advanced search technologies, we 
+                ensure you achieve more reach, more leads, and more sales.
+            </p>
+            <div class="buttons">
+                <a href="#home" class="btn home-btn">HOME</a>
+                <a href="#" class="btn start-btn">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>What Service We Provide</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="1.webp" alt="PPC Services">
+                <div class="service-content">
+                    <h3>PPC SERVICES</h3>
+                    <p>
+                        Aidvante’s PPC services use AI-driven strategies to maximize ROI, boost conversions, and lower costs. 
+                        Our expert team ensures targeted ads reach the right audience for measurable success.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="2.webp" alt="Gift Aid Claim">
+                <div class="service-content">
+                    <h3>GIFT AID CLAIM</h3>
+                    <p>
+                        Aidvante’s <a href="#">Gift Aid</a> claim services help charities maximize donations by ensuring accurate claims 
+                        and compliance. Our experts streamline the process, boosting reclaimed funds efficiently.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="3.webp" alt="SEO Services">
+                <div class="service-content">
+                    <h3>SEO SERVICES</h3>
+                    <p>
+                        Aidvante drives online growth with tailored <a href="#">SEO</a> and content strategies. We optimize visibility, 
+                        increase traffic, and maximize ROI to help you reach more customers and boost sales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="service-container">
+            <div class="service-box">
+                <img src="4.webp" alt="Google Ads Management">
+                <div class="service-content">
+                    <h3>GOOGLE ADS MANAGEMENT</h3>
+                    <p>
+                        Aidvante offers expert <a href="#">Google Ads management</a> services in London, helping businesses 
+                        drive targeted traffic, maximize conversions, and achieve a higher ROI with data-driven PPC strategies.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="5.webp" alt="Call Center Solutions">
+                <div class="service-content">
+                    <h3>CALL CENTER SOLUTIONS</h3>
+                    <p>
+                        Aidvante provides expert call center solutions, optimizing customer interactions, boosting engagement, 
+                        and enhancing conversions with data-driven strategies tailored for business growth.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="6.webp" alt="Charity Registration">
+                <div class="service-content">
+                    <h3>CHARITY REGISTRATION</h3>
+                    <p>
+                        Aidvante provides expert charity registration services, ensuring nonprofits meet legal requirements, 
+                        secure funding, and expand their impact with seamless compliance and expert guidance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="7.webp" alt="Business Woman">
+            </div>
+            <div class="hero-text">
+                <p class="sub-heading">We Believe in Quality Work</p>
+                <h1>Expert Digital Marketing Solutions for Business Growth</h1>
+                <p class="description">
+                    Aidvante delivers tailored SEO, PPC, and content marketing strategies to boost your online presence, 
+                    drive targeted traffic, and maximize conversions. Our data-driven approach ensures sustainable growth 
+                    and higher ROI for your business.
+                </p>
+                 <a href="#contact" style="--i:1"><button class="talk-button">Let's Talk</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services-section">
+        <div class="services-content">
+            <p class="services-subtitle">Let's Connect</p>
+            <h1 class="services-title">Our Services & What We Deliver</h1>
+            <p class="services-description">
+                We craft powerful SEO, PPC, and digital marketing strategies tailored to your success. 
+                From increasing visibility to driving conversions, our expert solutions ensure measurable 
+                growth and lasting impact. 🚀
+            </p>
+    
+            <div class="progress-container">
+                <div class="progress-item">
+                    <p class="progress-label">Customer Support</p>
+                    <div class="progress-bar"><div class="progress-fill" data-progress="70">70%</div></div>70%
+                </div>
+    
+                <div class="progress-item">
+                    <p class="progress-label">Quality Work</p>
+                    <div class="progress-bar"><div class="progress-fill" data-progress="95">95%</div></div>95%
+                </div>
+    
+                <div class="progress-item">
+                    <p class="progress-label">Respond Back</p>
+                    <div class="progress-bar"><div class="progress-fill" data-progress="55">55%</div></div>55%
+                </div>
+            </div>
+    
+            <button class="explore-button">Explore More</button>
+        </div>
+    
+        <div class="services-image">
+            <img src="8.webp" alt="Business Professional">
+        </div>
+    </section>
+    <section class="consultation-section">
+        <div class="consultation-image">
+            <img src="9.webp" alt="Consultation Image">
+        </div>
+    
+        <div class="consultation-content">
+            <p class="consultation-subtitle">Need Any Helps?</p>
+            <h1 class="consultation-title">Get More Consultations</h1>
+            <p class="consultation-description">
+                Have questions or need expert digital marketing solutions? 
+                Our team is ready to help you boost traffic, increase conversions, 
+                and scale your brand. Contact us today! 🚀
+            </p>
+    
+            <a href="#contact" style="--i:1"><button class="consultation-button">Call Us Now</button></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column logo-section">
+                <div class="logo-placeholder"><img src="Aidvante-Co-New-497-x-502-px.jpg" width="90px"></div><br>
+                <p class="tagline">Every Penny Counts</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#contact">Call Centre</a></li>
+                    <li><a href="#3">Engagement</a></li>
+                    <li><a href="#3">Builder</a></li>
+                    <li><a href="#2">Publisher</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Main Links</h4>
+                <ul>
+                    <li><a href="#1">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>Need Tax Updates?</h4>
+                <p>Subscribe to our site for quick gift aid relief updates.</p>
+                <form>
+                    <input type="email" placeholder="sample@mail.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer> 
+</section>
+
+<section class="blog" id="blog">
+
+
+    <section class="blog-section">
+        <h1 class="blog-title">Blog</h1>
+    
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="10.webp" alt="Blog Banner" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-heading">Digital Content Marketing Services – Aidvante SEO Solution</h2>
+                    <p class="blog-meta">March 6, 2025 / No Comments</p>
+                    <p class="blog-description">
+                        What is Digital Content Marketing? Facebook, Twitter, LinkedIn—looking for expert-led 
+                        content marketing services that deliver real results? Contact Aidvante today to discuss 
+                        a customized strategy tailored to your business needs. Digital content marketing is the 
+                        backbone of online success...
+                    </p>
+                    <button class="blog-button">Read More</button>
+                </div>
+            </div>
+    
+            <div class="blog-sidebar">
+                <div class="about-section">
+                    <h3 class="sidebar-title">About Us</h3>
+                    <p class="about-text">
+                        Luckily friends do ashamed to do suppose. Tried meant mr smile so. Exquisite behaviour 
+                        as to middleton perfectly. Chicken no wishing waiting am. Say concerns dwelling graceful.
+                    </p>
+                </div>
+    
+                <div class="services-section">
+                    <h3 class="sidebar-title">Services</h3>
+                    <ul class="service-list">
+                        <li>📌 PPC Services</li>
+                        <li>📌 Google Ads Management</li>
+                        <li>📌 Call Center Solutions</li>
+                        <li>📌 Consulting</li>
+                        <li>📌 SEO Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="blog-container">
+            <div class="blog-content">
+                <img src="12.webp" alt="Blog Banner" class="blog-image">
+                <h2 class="blog-title">SEO Strategist: The Ultimate Guide to Mastering Search Engine Optimization</h2>
+                <p class="blog-meta">March 5, 2025 / No Comments</p>
+                <p class="blog-description">
+                    What is an SEO Strategist? An SEO Strategist is a professional who develops, implements, and oversees 
+                    search engine optimization strategies to improve a website’s visibility on Google and other search engines...
+                </p>
+                <a href="#home" style="--i:1"><button class="read-more">Read More</button></a>
+            </div>
+    
+            <aside class="blog-sidebar">
+                <div class="recent-posts">
+                    <h3 class="sidebar-title">Most Recent Posts</h3>
+                    <ul>
+                        <li><img src="13.webp" alt="Post 1"> Digital Content Marketing Services – Aidvante SEO Solution</li>
+                        <li><img src="14.webp" alt="Post 2"> SEO Strategist: The Ultimate Guide to Mastering Search Engine Optimization</li>
+                        <li><img src="15.webp" alt="Post 3"> Charity PPC: How to Apply for a Google Charity Grant</li>
+                    </ul>
+                </div>
+    
+                <div class="company-info">
+                    <img src="9.webp" alt="Company Info" class="company-img">
+                    <h3>Company Info</h3>
+                    <p>Get Aidvante Services and Boost your queries now.</p>
+                    <a href="#contact" style="--i:1"><button class="contact-button">Contact Us</button></a>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column logo-section">
+                <div class="logo-placeholder"><img src="Aidvante-Co-New-497-x-502-px.jpg" width="90px"></div><br>
+                <p class="tagline">Every Penny Counts</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#contact">Call Centre</a></li>
+                    <li><a href="#3">Engagement</a></li>
+                    <li><a href="#3">Builder</a></li>
+                    <li><a href="#2">Publisher</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Main Links</h4>
+                <ul>
+                    <li><a href="#1">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>Need Tax Updates?</h4>
+                <p>Subscribe to our site for quick gift aid relief updates.</p>
+                <form>
+                    <input type="email" placeholder="sample@mail.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer> 
+    
+</section>
+
+<section class="about" id="about">
+    
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Left Content -->
+            <div class="about-content">
+                <h3 class="about-heading">About Us</h3>
+                <h1 class="about-title">Control Your Money <br> Control With Us!</h1>
+                <p class="about-description">
+                    At Aidvante Digital Ltd, we empower businesses with cutting-edge digital solutions tailored to drive growth, 
+                    efficiency, and online success. Based in London, UK, we specialize in a comprehensive suite of digital marketing, 
+                    development, and consultancy services designed to help businesses of all sizes navigate the complexities of the 
+                    digital landscape.
+                </p>
+    
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon vision"></div>
+                        <div class="feature-text">
+                            <h3>Our Vision</h3>
+                            <p>Empowering businesses with innovative digital solutions that enhance user experience and engagement.</p>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="feature-icon approach"></div>
+                        <div class="feature-text">
+                            <h3>Our Approach</h3>
+                            <p>Offering flexible layouts and designs that align with your brand identity and create visually appealing experiences.</p>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="feature-icon innovation"></div>
+                        <div class="feature-text">
+                            <h3>Our Innovation</h3>
+                            <p>Integrating interactive elements to build seamless, intuitive, and engaging user journeys.</p>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="feature-icon commitment"></div>
+                        <div class="feature-text">
+                            <h3>Our Commitment</h3>
+                            <p>Ensuring full customization to help businesses create unique and cohesive digital experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Image -->
+            <div class="about-image">
+                <img src="16.jpg" alt="Business Discussion">
+                <div class="blue-decor top-right"></div>
+                <div class="blue-decor bottom-left"></div>
+            </div>
+        </div>
+    </section>
+    <section class="team-section">
+        <div class="team-container">
+            <h3 class="team-subtitle">Our Team</h3>
+            <h1 class="team-title">Aidvante Professional Team</h1>
+    
+            <div class="team-members">
+                <!-- Member 1 -->
+                <div class="team-card">
+                    <img src="18.jpg" alt="Emma Richardson">
+                    <h3 class="team-name">Ms. Emma Richardson</h3>
+                    <p class="team-role">Charity Consultant</p>
+                    <p class="team-description">
+                        Emma specializes in supporting charities with strategic planning and sustainable growth, ensuring they maximize their impact.
+                    </p>
+                </div>
+    
+                <!-- Member 2 -->
+                <div class="team-card">
+                    <img src="19.jpg" alt="James Carter">
+                    <h3 class="team-name">James Carter</h3>
+                    <p class="team-role">Digital Advertising Manager</p>
+                    <p class="team-description">
+                        James designs and manages high-performing ad campaigns, optimizing digital strategies to drive engagement and conversions.
+                    </p>
+                </div>
+    
+                <!-- Member 3 -->
+                <div class="team-card">
+                    <img src="20.jpg" alt="Sophie Patel">
+                    <h3 class="team-name">Sophie Patel</h3>
+                    <p class="team-role">Gift Aid Specialist</p>
+                    <p class="team-description">
+                        Sophie helps charities streamline Gift Aid claims, improving compliance and maximizing financial returns for non-profits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <h3 class="timeline-subtitle">Company Timeline</h3>
+            <h1 class="timeline-title">How We Solve Your Problems</h1>
+            <p class="timeline-description">
+                We strive to help businesses of all sizes leverage digital transformation through data-driven strategies, innovative technology, and customer-centric solutions.
+            </p>
+    
+            <div class="timeline">
+                <!-- Event 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Founded in UK</h3>
+                        <p>Delivering digital excellence from day one.</p>
+                    </div>
+                    <div class="timeline-date">
+                        <p>March 2022</p>
+                        <span>Purley, London</span>
+                    </div>
+                </div>
+    
+                <!-- Event 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">
+                        <p>May 2015</p>
+                        <span>JP, Tokyo</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Opening New Office</h3>
+                        <p>Opened a new office to expand global reach.</p>
+                    </div>
+                </div>
+    
+                <!-- Event 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <a href="https://alkhair.org/>" style="--i:1" target="_blank"><h3 class="highlight-text">Alkhair Foundation UK</h3></a>
+                        <p>Enhanced client satisfaction, including for Alkhair Foundation.</p>
+                    </div>
+                    <div class="timeline-date">
+                        <p>Feb 2024</p>
+                        <span>Ad Campaigns</span>
+                    </div>
+                </div>
+    
+                <!-- Event 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">
+                        <p>Jun 2025</p>
+                        <span>New Order</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Improved Ourselves</h3>
+                        <p>Strengthened services for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column logo-section">
+                <div class="logo-placeholder"><img src="Aidvante-Co-New-497-x-502-px.jpg" width="90px"></div><br>
+                <p class="tagline">Every Penny Counts</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#contact">Call Centre</a></li>
+                    <li><a href="#3">Engagement</a></li>
+                    <li><a href="#3">Builder</a></li>
+                    <li><a href="#2">Publisher</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Main Links</h4>
+                <ul>
+                    <li><a href="#1">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>Need Tax Updates?</h4>
+                <p>Subscribe to our site for quick gift aid relief updates.</p>
+                <form>
+                    <input type="email" placeholder="sample@mail.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer> 
+    
+
+ </section>
+<section class="contact" id="contact">
+
+    <div class="contact-section">
+        <h1 class="contact-heading">Contact us</h1>
+    </div>
+
+    
+
+</section>
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        
+        
+        <div class="contact-details">
+            <p><span class="icon">📞</span> <strong>Office Phone Number</strong><br>+44-(0207)-870-1232</p>
+            <p><span class="icon">📧</span> <strong>Office Email</strong><br>info@aidvante.co.uk</p>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" onclick="sendMail()">Send</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-column logo-section">
+            <div class="logo-placeholder"><img src="Aidvante-Co-New-497-x-502-px.jpg" width="90px"></div><br>
+            <p class="tagline">Every Penny Counts</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/166rRtmsHt/" target="_blank" title="facebook" style="--i:6"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/aidvanteconsultancy/" target="_blank" title="linkedin" style="--i:6"> <i class="fab fa-linkedin-in"></i></a>
+                <a href="" target="_blank" title="twitter" style="--i:6"> <i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Features</h4>
+            <ul>
+                <li><a href="#contact">Call Centre</a></li>
+                <li><a href="#3">Engagement</a></li>
+                <li><a href="#3">Builder</a></li>
+                <li><a href="#2">Publisher</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Main Links</h4>
+            <ul>
+                <li><a href="#1">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column subscribe">
+            <h4>Need Tax Updates?</h4>
+            <p>Subscribe to our site for quick gift aid relief updates.</p>
+            <form>
+                <input type="email" placeholder="sample@mail.com">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer> 
+
+ <div class="layyer">
+    <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+ </div>
+
+
+</body>
+</html>
